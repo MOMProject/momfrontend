@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mind cloud</title>
+	 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">-->
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+	<div class="container-fluid first">
+		<div class="row" id="left_menu">
+			<div class="col-sm-1 menu" id="menus">
+			<div id="first_block">	
+			<b id="name_company">all<b id="name_hide">Search</b></b>
+			</div>
+
+				<div id="main_menu">
+					<ul id="category_list">
+						
+					
+						<li><a id="category" href="#">
+						<i  class="fas fa-globe icon_menu"></i>
+						<span class="text_menu">search</span></a></li>
+
+						<li><a id="category" href="#">
+							<i class="fas fa-chart-pie icon_menu"></i>
+							<span class="text_menu">analitics</span></a></li>
+
+						<li><a id="category" href="#">
+							<i class="fas fa-chart-bar icon_menu"></i>
+							<span class="text_menu">reports</span>
+						</a></li>
+							<li><a id="category" href="https://search-momproject-yrhnxkfn3zfeumvy35cjskfxea.us-east-2.es.amazonaws.com/_plugin/kibana/">
+							<i class="fab fa-kickstarter-k icon_menu"></i>
+							<span class="text_menu">kibana</span>
+						</a></li>
+					</ul>
+	
+				</div>
+				<div id="menu_bot">
+					<div id="set"><a id="category" href=""><i class="fas fa-cog icon_menu"></i><span class="text_menu">settings</span></a></div>
+					<div id="icon_hide"><a id="menu_hide" href="#"><i id="button_hide" class="fas fa-angle-left">
+						</i></a>
+					<a id="menu_show" href="#"><i id="button_show" class="fas fa-angle-right"></i></a></div>
+				</div>
+			</div>
+
+			<div class="col main_part">
+				<!-- Form for adding site -->
+				<div id="add_site_form">
+					<div class="row">
+						<!-- Left column of Form  -->
+						<div class="col-md-12 text-center" id="header"><span id="header_text">добавить сайт</span></div>
+						<div class="col-md-4" id="form_list">
+							<li id="f_html">
+								<a id="html_click" href="#"><img id="form_list_img" src="image/add_site_form/html.png" alt="">html</a>
+								</li>
+							<li id="f_soc">
+								<a id="soc_click" href="#"><img id="form_list_img" src="image/add_site_form/share.png" alt="">социальные сети</a>
+								</li>
+							<li id="f_who">
+								<a id="who_click" href="#"><img id="form_list_img" src="image/add_site_form/users.png" alt="">who is</a>
+								</li>
+						</div>
+						<div class="col-md-8">
+							<div id="html_part">
+								<li><span id="ht_url">url <img src="image/add_site_form/next.png" alt=""></span>
+									
+									</li>
+
+								<li ><input id="ht_site" type="text">
+									<span id="ht_down">загрузить</span>
+
+									</li>
+
+								<li class="ht_li">
+									<span class="ht_next">rss</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+								
+								<li class="ht_li">
+									<span class="ht_next">заголовок сайта</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+
+									<li class="ht_li">
+									<span class="ht_next">ключевые слова</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+
+								<li class="ht_li">
+									<span class="ht_next">описание</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+
+								<li class="ht_li">
+									<span class="ht_next">о компании</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+
+								<li class="ht_li">
+									<span class="ht_next">язык</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+
+								<li  class="ht_li">
+									<span class="ht_next">дата добавления</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+
+								<li class="ht_li">
+									<span class="ht_next">заметка</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+
+								<li class="ht_li">
+									<span class="ht_next">логотип</span>
+									</li>
+									<li>
+									<img id="ht_icon" src="image/add_site_form/twitter.png" alt="">
+								</li>
+									<li class="ht_li">
+										<span class="ht_next">рейтинг</span>
+									</li>
+									<li>
+									<fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</fieldset>
+							
+								</li>
+								<li id="save_cancel">
+									<a href="#" class="ht_canc">отменить</a>
+									<span id="ht_save">сохранить</span>
+								</li>
+							
+
+							</div>
+							<!--  Social sites part        -->
+							<div id="soc_seti_part">
+								<li><span id="ht_url">url <img src="image/add_site_form/next.png" alt=""></span>
+									
+									</li>
+
+								<li ><input id="ht_site" type="text">
+									<span id="ht_down">загрузить</span>
+
+									</li>
+								<img id="soc_icon" src="image/add_site_form/facebook.png" alt="">
+
+
+								<li class="ht_li">
+									
+									<span class="ht_next">facebook</span>
+									</li>
+									<li>
+										
+									<input class="ht_inp" type="text">
+								</li>
+								<img id="soc_icon" src="image/add_site_form/twitter.png" alt="">
+								<li class="ht_li">
+									
+									<span class="ht_next">twitter</span>
+									</li>
+									<li>
+										
+									<input class="ht_inp" type="text">
+								</li>
+									<img id="soc_icon" src="image/add_site_form/youtube.png" alt="">
+									<li class="ht_li">
+										
+									<span class="ht_next">youtube</span>
+									</li>
+									<li>
+
+									<input class="ht_inp" type="text">
+								</li>
+
+								<li id="save_cancel_soc">
+									<span id="soc_canc">отменить</span>
+									<span id="soc_save">сохранить</span>
+								</li>
+							
+							</div>
+
+							<!-- Who is part -->
+							<div id="who_part">
+								<li><span id="ht_url">url <img src="image/add_site_form/next.png" alt=""></span>
+									
+									</li>
+
+								<li ><input id="ht_site" type="text">
+									<span id="ht_down">загрузить</span>
+
+									</li>
+								
+									
+									<li class="ht_li">
+									<span class="ht_next">дата создания сайта</span>
+									</li>
+										<li>
+
+									<input class="ht_inp" type="text">
+								</li>
+									<li class="ht_li">
+									<span class="ht_next">страна</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+								
+								<li class="ht_li">
+									<span class="ht_next">штат область</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+
+									<li class="ht_li">
+									<span class="ht_next">город</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+
+								<li class="ht_li">
+									<span class="ht_next">почтовый код</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+
+								<li class="ht_li">
+									<span class="ht_next">эл. почта</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+
+								<li class="ht_li">
+									<span class="ht_next">телефон</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+
+								<li  class="ht_li">
+									<span class="ht_next">дата добавления</span>
+									</li>
+									<li>
+									<input class="ht_inp" type="text">
+								</li>
+
+									<li id="save_cancel">
+									<span class="ht_canc">отменить</span>
+									<span id="ht_save">сохранить</span>
+								</li>
+								
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="row" id="first_row">	
+					<i id="search_icon" class="fas fa-search"></i>
+					<input id="search" type="text" placeholder="Search..">
+					<div id="up_button"><a id="top_button" href="">go</a>
+					<a id="top_button" href=""><i id="top_save" class="far fa-save"></i>export</a>
+					<a id="add_site" href="">Add Site</a>
+				</div>
+				</div>
+				<div class="row" id="filter_part">	
+				<a id="add_button" href=""><img id="plus_add" src="image/plus.png" alt=""><span id="add_text">add filter</span></a>
+				<a id="filter_record" href=""><span id="filter_word"></span><span id="or">OR</span></a>
+			<a id="band" href="#"><span >AND</span></a>
+			</div>
+				<ul id="filter_option">
+					<li><a class="filter_text" href="">name</a></li>
+					<li><a class="filter_text" href="">region</a></li>
+					<li><a class="filter_text" href="">state</a></li>
+					<li><a class="filter_text" href="">country</a></li>
+				</ul>
+				
+				<div class="row" id="main_choose">	
+					
+				<div class="info_list" id="number1"><img src="image/columns.png" alt=""></div>
+				<div class="info_list" id="number2"><a href="#">site link</a></div>
+				<div class="info_list" id="number3"><a href="#">site theme</a></div>
+			
+				<div id="number10"><a href=""><img src="image/Add.png" alt=""></a></div>
+				</div>
+
+				<div class="row" id="information_part">	
+				<!--
+					<div class="info_li" id="num1">1</div>
+				<div class="info_list" id="num2">
+						<label class="switch">
+ 					 <input type="checkbox">
+ 					 <span class="slider"></span>
+						</label>
+				</div>
+				<div class="info_li" id="num3"><img src="image/111.jpg" alt=""><span id="resource">новое время</span></div>
+  					
+
+				<div class="info_li" id="num4"><a href="#"><img id="flag" src="image/ua.png" alt="national"><span id="country_name">ukraine</span></a></div>
+				<div class="info_li" id="num5"><a href="#">Ua</a></div>
+				<div class="info_li" id="num6"><a href="#">2017.10.22</a></div>
+				<div class="info_li" id="num7"><a href="#"><span id="rating_num">89</span><div id="scale"></div></a></div>
+				<div class="info_li" id="num8"><a href="#">
+					<img id="social_icon" src="image/twitter copy.png" alt="">
+					<img id="social_icon" src="image/youtube.png" alt="">
+					<img id="social_icon" src="image/facebook.png" alt="">
+					<img id="social_icon" src="image/instagram.png" alt="">
+					<span id="more_social">+5</span>
+				</a></div>
+				<div class="info_li" id="num9"><a id="rss" href="#">link</a></div>
+				<div class="info_li" id="num9"><a href="#">1999.02.05</a></div>
+				-->
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+    $("#menu_hide").click(function(){
+    	 event.preventDefault();
+        $("#menus").css("width", "50px");
+        $(".text_menu").css("display", "none");
+        $("#set").css("width", "35px");
+        $("#button_hide").css("display","none");
+         $("#button_show").css("display","block");
+        $(".main_part").css("margin-left", "49px");
+       $("#name_hide").hide();
+
+
+
+    });
+    $("#menu_show").click(function(){
+    	event.preventDefault();
+        $("#menus").css("width", "95px");
+        $(".icon_menu").css("float","left");
+        $(".text_menu").css("display", "block").css("float","left");
+        $(".main_part").css("margin-left", "94px");
+        $("#set").css("width", "85px");
+        $("#button_hide").css("display","block");
+         $("#button_show").css("display","none");
+          $("#name_hide").show();
+
+    });
+     $("#add_button").click(function(){
+     	event.preventDefault();
+     		$("#add_site_form").show();
+     //	$("#filter_option").show();
+     //	$("#add_button").css("background-color","var(--dark)").css("border","1px solid var(--dark)");
+     //	$("#filter_icon").css("background-color", "var(--dark)");
+});
+      $(".ht_canc").click(function(){
+      	event.preventDefault();
+      	$("#add_site_form").hide();
+      	});
+
+        $("#soc_canc").click(function(){
+      	event.preventDefault();
+      	$("#add_site_form").hide();
+      	});
+
+         $("#html_click").click(function(){
+      	event.preventDefault();
+      	$("#soc_seti_part").hide();
+      	$("#who_part").hide();
+      	$("#html_part").show();
+		});
+
+
+        $("#soc_click").click(function(){
+      	event.preventDefault();
+      	$("#html_part").hide();
+      	$("#who_part").hide();
+      	$("#soc_seti_part").show();
+		});
+
+
+        $("#who_click").click(function(){
+      	event.preventDefault();
+      	$("#soc_seti_part").hide();
+      	$("#html_part").hide();
+      	$("#who_part").show();
+      
+		});
+
+     $(".filter_text").click(function(){
+     	event.preventDefault();
+     	$("#add_button").hide();
+     	$("#filter_option").hide();
+     	$("#filter_record").show();
+     		$("#filter_word").append( $(this).text() );
+     		$("#band").show();
+
+     });
+$("#or").click(function(){
+	event.preventDefault();
+	$("#or").empty();
+	$("#band").empty();
+	$("#band").append("OR");
+	$("#or").append("AND");
+});
+
+  $("#band").click(function(){
+  	event.preventDefault();
+  	$("#or").empty();
+	$("#band").empty();
+	$("#or").append("OR");
+	$("#band").append("AND");
+  });
+
+
+
+});
+
+	</script>
+</body>
+</html>

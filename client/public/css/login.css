@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+body{
+	background-color: #ededed;
+}
+#main_login{
+	box-shadow: 1px 1px 10px  rgba(0,0,0,0.5);
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: 550px;
+	background-color: white;
+}
+#main_login li{
+	list-style-type: none;
+	}
+#login_logo{
+margin-top: 50px;
+margin-left: 90px;
+}
+#login{
+	border: 1px solid #ededed;
+	border-radius:15px 15px 15px 15px;
+	padding:7px 10px 7px 10px;
+	background-color: #ededed;
+	margin-left: 100px;
+	width: 300px;
+	margin-top: 50px;
+}
+#pass{
+	border: 1px solid #ededed;
+	border-radius:15px 15px 15px 15px;
+	padding:7px 10px 7px 10px;
+	background-color: #ededed;
+	margin-left: 100px;
+	width: 300px;
+	margin-top: 50px;
+}
+#button_enter{
+	position: relative;
+	margin-top:50px;
+	text-transform: uppercase;
+	margin-left: 190px;
+	width: 125px;
+	border: 1px solid #3f87f5;
+	border-radius:15px 15px 15px 15px;
+	padding:0px 10px 0px 10px;
+	color: white;
+	background-color: #3f87f5;
+	text-transform: capitalize;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-size: 16px;
+}
+#but_text{
+	color: white;
+	margin-left: 30px;
+}
+/*
+	Third part 
+*/
+.third{
+	background-color: var(--blue);
+}

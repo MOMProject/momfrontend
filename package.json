@@ -1,0 +1,28 @@
+{
+  "name": "allserach",
+  "version": "1.0.0",
+  "description": "all search",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "onlyK",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "npm": "^5.7.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.17.1"
+  }
+}

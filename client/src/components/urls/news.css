@@ -1,0 +1,53 @@
+.news_div{
+ position: relative;
+ top: 0px;
+ margin:0px;
+ padding:0px;
+ height: 23px;
+
+}
+.news_mine{
+ margin:0px;
+ margin-left: 20px;
+ padding:0px;
+}
+.news_mine li {
+	list-style-type: none;
+	margin:0px;
+	padding: 0px;
+}
+#first_one{
+ position: relative;
+ width:40px;
+ margin-left: -5px;
+}
+/*#second_one{
+	width: 150px;
+margin-left: 20px;
+}*/
+#third_one{
+	position: relative;
+	float: left;
+	width: 150px;
+	margin-left: 35px;
+	top: -20px;
+}
+#fourth_one{
+	position: relative;
+	top: -20px;
+	float: left;
+	width: 200px;
+margin-left: 30px;
+}
+/*
+#fifth_one{
+	width: 120px;
+	margin-left: 20px;
+}
+#six_one{
+	margin-left: 20px;
+}
+#seven_one{
+	margin-left: 20px;
+}
+*/

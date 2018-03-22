@@ -1,0 +1,58 @@
+-- MySQL dump 10.13  Distrib 5.7.18, for Linux (x86_64)
+--
+-- Host: localhost    Database: momdb
+-- ------------------------------------------------------
+-- Server version	5.7.18-0ubuntu0.16.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `NewsHtml`
+--
+/*
+--DROP TABLE IF EXISTS `NewsHtml`;
+*/
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `NewsHtml` (
+  `f_Idh` bigint(20) NOT NULL AUTO_INCREMENT,
+  `f_titleRss` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `f_linkRss` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `f_description` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `f_category` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `f_pubDate` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `f_full_text` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `f_fromSite` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`f_Idh`),
+  KEY `f_fromSite` (`f_fromSite`),
+  CONSTRAINT `NewsHtml_ibfk_1` FOREIGN KEY (`f_fromSite`) REFERENCES `siteNews` (`f_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=142247 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `NewsHtml`
+--
+
+LOCK TABLES `NewsHtml` WRITE;
+/*!40000 ALTER TABLE `NewsHtml` DISABLE KEYS */;
+INSERT INTO `NewsHtml` VALUES (1,'Футболист сборной Украины объявил об уходе из турецкого клуба','https://www.obozrevatel.com/sport/football/futbolist-sbornoj-ukrainyi-obyavil-ob-uhode-iz-turetskogo-kluba.htm','Бывший игрок \"Днепра\" и \"Шахтера\" попрощался с болельщиками','Футбол','Wed, 20 Dec 2017 14:28:00 +0200',NULL,1),
+
+(2,'Британскую порнозвезду посадили в тюрьму','https://www.obozrevatel.com/life/digest/britanskuyu-pornozvezdu-posadili-v-tyurmu.htm','Она откусила женщине кусок уха','Дайджест','Wed, 20 Dec 2017 14:25:00 +0200',NULL,1),
+(3,'Любовный гороскоп на 2018 год: кому звезды сулят свадьбу?','https://www.obozrevatel.com/life/philosophy/lyubovnyij-goroskop-na-2018-god-komu-zvezdyi-sulyat-svadbu.htm','Стало известно, чего ожидать от 2018 года на любовном фронте ','Философия','Wed, 20 Dec 2017 14:22:00 +0200',NULL,1),
+(4,'Метро на Троещину все-таки будет? У Кличко поделились радостными известиями ','https://www.obozrevatel.com/kiyany/metro-na-troeschinu-vse-taki-budet-u-klichko-podelilis-radostnyimi-izvestiyami.htm','Задача номер один - строительство моста, - пояснил Белоцерковец','Кияни','Wed, 20 Dec 2017 14:18:00 +0200',NULL,1),
+(5,'Дантисты рассказали, что будет если один раз не почистить зубы','https://www.obozrevatel.com/health/stomatology/dantistyi-rasskazali-chto-budet-esli-odin-raz-ne-pochistit-zubyi.htm','Это приводит к разным заболеваниям','Стоматология','Wed, 20 Dec 2017 14:15:00 +0200',NULL,1),
+(6,'Дело Мартыненко: скандальному экс-нардепу вручили новое подозрение','https://www.obozrevatel.com/crime/delo-martyinenko-skandalnomu-eks-nardepu-vruchili-okonchatelnoe-podozrenie.htm','В прокуратуре поделились информацией','Расследования','Wed, 20 Dec 2017 14:15:00 +0200',NULL,1),
+(7,'\"Просите прощения\": Собчак призвала Украину к переговорам с Россией','https://www.obozrevatel.com/politics/prosite-proscheniya-sobchak-prizvala-ukrainu-k-peregovoram-s-rossiej.htm','Журналистка добавила, что нужно забыть о тезисах о \"старшем и младшем братьях\"','Политика','Wed, 20 Dec 2017 14:09:00 +0200',NULL,1),
+
+(8,'Россия выставила Украине счет за газ для \"Л/ДНР\"','https://www.obozrevatel.com/finance/economy/rossiya-vyistavila-ukraine-schet-za-gaz-dlya-ldnr.htm','\"Газпром\" намерен оформить свои претензии с помощью Стокгольмского арбитража','Рынки и компании','Wed, 20 Dec 2017 14:07:00 +0200',NULL,1),
+(9,'Экстрадиция Фирташа: стало известно о еще одной \"победе\" олигарха','https://www.obozrevatel.com/crime/ekstraditsiya-firtasha-stalo-izvestno-o-esche-odnoj-pobede-oligarha.htm','Адвокаты бизнесмена нашли лазейку','Расследования','Wed, 20 Dec 2017 14:07:00 +0200',NULL,1),
+(10,'Ситуация на дорогах Украины: сотни ДТП и застрявших фур','https://www.obozrevatel.com/crime/aktualnaya-situatsiya-na-dorogah-ukrainyi-sotni-dtp-i-zastryavshih-fur.htm','Начался настоящий коллапс','Расследования','Wed, 20 Dec 2017 05:38:00 +0200',NULL,1),
